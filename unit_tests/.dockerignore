@@ -1,0 +1,14 @@
+.git
+.gitignore
+.dockerignore
+Dockerfile
+README.md
+.env
+node_modules
+__pycache__
+*.pyc
+.venv
+venv
+*.egg-info
+dist
+build
