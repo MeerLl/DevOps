@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  docker-tg-bot:
+    build: /home/georg/Desktop/DevOps/docker-tg-bot
+    container_name: docker-tg-bot
+    working_dir: /app
+    volumes:
+      - /home/georg/Desktop/DevOps/docker-tg-bot:/app
+      - /home/georg/Desktop/tg-scale-lab:/tg-scale-lab
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/bin/docker:/usr/bin/docker:ro
+    environment:
+      TELEGRAM_TOKEN: "710123456:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw"
+      TELEGRAM_ALLOWED_CHATS: "123456789"
+      AUTOSCALE_INTERVAL: 30
+      CPU_THRESHOLD: 0.7
+      MAX_REPLICAS: 5
+      MIN_REPLICAS: 1
+      COMPOSE_PROJECT: "tg-scale-lab"
+      COMPOSE_PROJECT_DIR: "/tg-scale-lab"
+      COMPOSE_SERVICE: "web"
+    restart: unless-stopped
+
