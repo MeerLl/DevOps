@@ -21,7 +21,7 @@
 - pytest  
 
 ## Структура проекта
-
+```
 docker-tg-bot/
 ├── Dockerfile
 ├── docker-compose.yml
@@ -38,7 +38,7 @@ docker-tg-bot/
     ├── test_docker_client.py
     ├── test_handlers.py
     └── test_monitor.py
-
+```
 ## Конфигурация
 
 Бот настраивается через переменные окружения:
@@ -58,7 +58,7 @@ docker-tg-bot/
 2. В корне проекта задать переменные окружения (через `.env` или экспортом в shell).  
 3. Собрать и запустить контейнер бота:
 
-`docker compose up --build`
+```docker compose up --build```
 
 Контейнер бота должен иметь доступ к `/var/run/docker.sock`, чтобы управлять Docker Engine хоста.
 
