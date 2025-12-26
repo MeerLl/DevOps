@@ -58,7 +58,7 @@ docker-tg-bot/
 2. В корне проекта задать переменные окружения (через `.env` или экспортом в shell).  
 3. Собрать и запустить контейнер бота:
 
-docker compose up --build
+`docker compose up --build`
 
 Контейнер бота должен иметь доступ к `/var/run/docker.sock`, чтобы управлять Docker Engine хоста.
 
