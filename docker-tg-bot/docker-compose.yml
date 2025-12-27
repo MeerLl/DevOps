@@ -1,4 +1,3 @@
-version: "3.9"
 
 services:
   docker-tg-bot:
@@ -11,8 +10,8 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - /usr/bin/docker:/usr/bin/docker:ro
     environment:
-      TELEGRAM_TOKEN: "710123456:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw"
-      TELEGRAM_ALLOWED_CHATS: "123456789"
+      TELEGRAM_TOKEN: "710123456:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw" #пример
+      TELEGRAM_ALLOWED_CHATS: "123456789" #пример
       AUTOSCALE_INTERVAL: 30
       CPU_THRESHOLD: 0.7
       MAX_REPLICAS: 5
