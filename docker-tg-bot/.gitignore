@@ -13,6 +13,7 @@ __pycache__/
 *.log
 *.tmp
 *.swp
+.coverage
 
 .vscode/
 .idea/
