@@ -1,4 +1,3 @@
-
 services:
   docker-tg-bot:
     build: /home/georg/Desktop/DevOps/docker-tg-bot
